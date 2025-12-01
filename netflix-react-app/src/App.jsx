@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Home from "./Pages/Home/Home";
 
 function App() {
   return (
-    <div>
-      <p>Hello Netflix</p>
-    </div>
-  )
+    <>
+      <Home />
+    </>
+  );
 }
 
-export default App
+export default App;
