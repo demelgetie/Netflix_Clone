@@ -37,3 +37,73 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.header_outerContainer {
+  width: 100%;
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.netflix_logo {
+  width: 110px;
+  cursor: pointer;
+}
+
+.nav_links,
+.icon_links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav_links li,
+.icon_links li {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menu_icon {
+  color: white;
+  cursor: pointer;
+}
+
+/* Hide mobile menu by default */
+.mobile_menu {
+  background-color: black;
+  padding: 20px;
+}
+
+.mobile_menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile_menu li {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav_links {
+    display: none;
+  }
+
+  .icon_links {
+    gap: 15px;
+  }
+}
