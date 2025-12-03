@@ -4,14 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: transparent; */
+  background-color: transparent;
   background-color: rgb(20, 20, 20);
   height: 10vh;
   color: white;
   transition: all 0.5s;
   transition-timing-function: ease-in;
   z-index: 1;
-  /* background-color: red; */
 }
 .leftside ul {
   width: 120%;
@@ -20,7 +19,6 @@
   align-items: center;
   list-style: none;
   cursor: pointer;
-  /* background-color: lightblue; */
 }
 .rightside ul {
   width: 100%;
@@ -29,7 +27,6 @@
   align-items: center;
   list-style: none;
   cursor: pointer;
-  /* background-color: lightblue; */
 }
 .header_container {
   width: 90%;
