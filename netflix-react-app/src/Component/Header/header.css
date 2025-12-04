@@ -5,12 +5,14 @@
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  background-color: rgb(20, 20, 20);
   height: 10vh;
   color: white;
   transition: all 0.5s;
   transition-timing-function: ease-in;
   z-index: 1;
+}
+.header_black {
+  background-color: rgba(20, 20, 20, 1);
 }
 .leftside ul {
   width: 120%;
@@ -37,7 +39,6 @@
 
 .header_outerContainer {
   width: 100%;
-  background-color: black;
   padding: 10px 20px;
   position: fixed;
   top: 0;

@@ -11,7 +11,8 @@ import CloseIcon from "@mui/icons-material/Close";
 const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [isScrolled, setIsScrolled] = useState(false);
+  
   // Detect screen size changes
   useEffect(() => {
     const handleResize = () => {
@@ -23,8 +24,22 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true); // user has scrolled down
+      } else {
+        setIsScrolled(false); // user is at the very top
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="header_outerContainer">
+    <div
+      className={`header_outerContainer ${isScrolled ? "header_black" : ""}`}
+    >
       <div className="header_container">
         {/* LOGO */}
         <div className="leftside">
@@ -87,8 +102,6 @@ const Header = () => {
 };
 
 export default Header;
-
-
 
 /* import React, { useEffect, useState } from "react";
 import "./header1.css";
