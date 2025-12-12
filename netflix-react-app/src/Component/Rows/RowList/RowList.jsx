@@ -1,5 +1,5 @@
-import React from 'react'
-import SingleRow from '../SingleRow/SingleRow'
+import React from "react";
+import SingleRow from "../SingleRow/SingleRow";
 import requests from "../../../Utils/requests";
 
 const RowList = () => {
@@ -23,6 +23,6 @@ const RowList = () => {
       <SingleRow title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
     </>
   );
-}
+};
 
-export default RowList
+export default RowList;
