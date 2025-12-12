@@ -12,7 +12,7 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  
+
   // Detect screen size changes
   useEffect(() => {
     const handleResize = () => {
@@ -44,20 +44,20 @@ const Header = () => {
         {/* LOGO */}
         <div className="leftside">
           <img src={logo} alt="Netflix Logo" className="netflix_logo" />
+
+          {/* DESKTOP MENU */}
+          {!isMobile && (
+            <ul className="nav_links">
+              <li>Home</li>
+              <li>TV Shows</li>
+              <li>Movies</li>
+              <li>Latest</li>
+              <li>My List</li>
+              <li>Browse by Languages</li>
+            </ul>
+          )}
         </div>
-
-        {/* DESKTOP MENU */}
-        {!isMobile && (
-          <ul className="nav_links">
-            <li>Home</li>
-            <li>TV Shows</li>
-            <li>Movies</li>
-            <li>Latest</li>
-            <li>My List</li>
-            <li>Browse by Languages</li>
-          </ul>
-        )}
-
+        
         {/* RIGHTSIDE ICONS */}
         <div className="rightside">
           <ul className="icon_links">

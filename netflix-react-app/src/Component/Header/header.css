@@ -14,6 +14,20 @@
 .header_black {
   background-color: rgba(20, 20, 20, 1);
 }
+
+.header_container {
+  width: 100%;
+  padding-right: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftside {
+  display: flex;
+  justify-content: space-between;
+}
+
 .leftside ul {
   width: 120%;
   display: flex;
@@ -30,25 +44,12 @@
   list-style: none;
   cursor: pointer;
 }
-.header_container {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .header_outerContainer {
   width: 100%;
-  padding: 10px 20px;
   position: fixed;
   top: 0;
   z-index: 1000;
-}
-
-.header_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .netflix_logo {
