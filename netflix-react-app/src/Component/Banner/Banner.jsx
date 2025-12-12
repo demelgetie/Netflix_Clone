@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "../../Utils/axios"
 import requests from "../../Utils/requests";
-import "./Banner.css";
+import "./banner.css";
 
 function truncate(str, n) {
   return str?.length > n ? str.substr(0, n - 1) + "..." : str;
