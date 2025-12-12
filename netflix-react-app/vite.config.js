@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Netflix_Clone/netflix-react-app/'
+  base: '/Netflix_Clone/'
   })
